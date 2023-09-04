@@ -12,7 +12,7 @@ function App() {
     { text: 'Блог', link: '#' },
   ];
   return (
-    <div className="App">
+    <div className="app">
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu+Condensed&display=swap"
@@ -20,6 +20,7 @@ function App() {
         />
       </Helmet>
       <Header menuItems={menuItems} />
+      {/* Other components */}
       <Footer menuItems={menuItems} />
     </div>
   );
