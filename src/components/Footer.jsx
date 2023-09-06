@@ -23,17 +23,17 @@ function Footer(props) {
         <div className="center-footer">
           <ul className="footer-documents">
             <li>
-              <a href="privacy-politic">Политика конфиденциальности</a>
+              <a href="contract">Договор публичной оферты</a>
             </li>
             <li>
-              <a href="contract">Договор публичной оферты</a>
+              <a href="privacy-politic">Политика конфиденциальности</a>
             </li>
           </ul>
           <div className="footer-info-container">
             <ul className="footer-info">
               <li>ИП Ларькина К.Ю.</li>
-              <li>ОГРНИП 318527500097073</li>
               <li>ИНН 525801278469</li>
+              <li>ОГРНИП 318527500097073</li>
             </ul>
           </div>
         </div>
