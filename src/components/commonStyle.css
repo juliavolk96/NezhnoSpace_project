@@ -32,9 +32,14 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: 400px;
   min-width: 320px;
   /* overflow-y: hidden; */
+}
+
+h1, h2 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 ul {

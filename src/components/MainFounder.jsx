@@ -6,7 +6,7 @@ function MainFounder() {
       <div className='founder-description-container'>
         <div className='founser-video video-container'></div>
         <div className='description-wrap'>
-          <h3 founder-description-title>Ксения Ларькина</h3>
+          <h3 className='founder-description-title'>Ксения Ларькина</h3>
           <ul className='description-list'>
             <li>Практикующий психолог</li>
             <li>Телесно-ориентированный психотерапев</li>
