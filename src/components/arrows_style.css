@@ -1,6 +1,7 @@
 .arrow-left {
   left: -60px; 
-  background: url('../images/Left-2.svg') no-repeat center center;
+  background: url('../images/Left-2.svg') no-repeat;
+  background-position: center center;
   width: 30px; 
   height: 30px; 
   position: absolute; 
@@ -11,7 +12,7 @@
 [dir='rtl'] .arrow-left::before {
   right: -60px; 
   left: auto;
-  background: url('../images/Left-2.svg') no-repeat center center;
+  background: url('../images/Left-2.svg') no-repeat;
   width: 30px; 
   height: 30px; 
   position: absolute; 
@@ -20,7 +21,8 @@
 
 .arrow-right {
   right: -60px; 
-  background: url('../images/Right-2.svg') no-repeat center center;
+  background: url('../images/Right-2.svg') no-repeat;
+  background-position: center center;
   width: 30px; 
   height: 30px; 
   position: absolute; 
@@ -31,9 +33,16 @@
 [dir='rtl'] .arrow-right {
   right: auto; 
   left: -60px;
-  background: url('../images/Right-2.svg') no-repeat center center;
+  background: url('../images/Right-2.svg') no-repeat;
   width: 30px; 
   height: 30px; 
   position: absolute; 
   border: none; 
+}
+
+.arrow-left,
+.arrow-left::before,
+.arrow-right,
+.arrow-right {
+  top: 45%;
 }

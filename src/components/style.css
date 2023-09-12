@@ -173,12 +173,163 @@
   text-align: left;
 }
 
-
-/*Intro-anxiety*/
+/*Slider*/
 .intro-anxiety {
-  margin-top: 100px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
 }
 
+.intro-anxiety-title {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.intro-anxiety-slider {
+  height: 260px;
+  /* margin: 0 auto; */
+}
+
+.slick-sliders {
+  display: flex;
+  height: 100%;
+  margin: auto;
+}
+
+.slick-sliders .slick-list {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.slick-track {
+  margin-top: 40px;
+}
+
+.it-bothers-me-group {
+  text-align: center;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.it-bothers-me-item {
+  display: inline-flex;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.it-bothers-me-item > span {
+  display: inline-flex;
+  padding: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  color: #111111;
+  margin: 10px;
+  width: auto;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #11111115;
+  border-radius: 100px;
+  transition: background-color 0.5s ease;  
+  overflow: visible;
+}
+
+/*Стили при нажатии*/
+.it-bothers-me-item.active > span {
+  background-color: #8d9ace; 
+  color: white; 
+  /* box-shadow: none;  */
+  box-shadow: 1px 1px 5px #11111115;
+  filter: drop-shadow(0px 2px 6px rgba(17, 17, 17, 0.15)); 
+  border-radius: 100px;
+}
+
+.blue-button > a {
+  display: flex;
+  text-align: center;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Dots - переопределение стилей*/
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px; 
+  height: 10px; 
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 30px; 
+  height: 30px; 
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 0.25;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px; 
+  height: 30px; 
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: #BFA4CE;; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #7264AA; 
+}
 
 /*Footer style*/
 

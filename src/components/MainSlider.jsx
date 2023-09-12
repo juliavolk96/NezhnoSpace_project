@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -43,6 +43,10 @@ function MainSlider() {
     arrows: false,
   };
 
+  const [activeIndexes, setActiveIndexes] = useState(
+    MainSliderText.map(() => new Set()),
+  );
+
   const handlePrevClick = () => {
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
@@ -55,14 +59,36 @@ function MainSlider() {
     }
   };
 
+  const handleItemClick = (groupIndex, itemIndex) => {
+    const newActiveIndexes = [...activeIndexes];
+    if (newActiveIndexes[groupIndex].has(itemIndex)) {
+      newActiveIndexes[groupIndex].delete(itemIndex);
+    } else {
+      newActiveIndexes[groupIndex].add(itemIndex);
+    }
+    setActiveIndexes(newActiveIndexes);
+  };
+
+  const isItemActive = (groupIndex, itemIndex) => (
+    activeIndexes[groupIndex].has(itemIndex)
+  );
+
   return (
     <div>
       <CustomSliderControls onPrevClick={handlePrevClick} onNextClick={handleNextClick} />
-      <Slider {...settings} ref={sliderRef}>
-        {MainSliderText.map((itemGroup, index) => (
-          <div key={index}>
-            {itemGroup.map((item, i) => (
-              <span key={i}>{item}</span>
+      <Slider className='slick-sliders' {...settings} ref={sliderRef}>
+        {MainSliderText.map((itemGroup, groupIndex) => (
+          <div className='it-bothers-me-group' key={groupIndex}>
+            {itemGroup.map((item, itemIndex) => (
+              <div
+                key={itemIndex}
+                className={`it-bothers-me-item ${
+                  isItemActive(groupIndex, itemIndex) ? 'active' : ''
+                }`}
+                onClick={() => handleItemClick(groupIndex, itemIndex)}
+              >
+                <span>{item}</span>
+              </div>
             ))}
           </div>
         ))}
