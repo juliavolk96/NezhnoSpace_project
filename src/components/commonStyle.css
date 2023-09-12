@@ -85,3 +85,7 @@ a {
 .blue-button a {
   color: white;
 }
+
+section {
+  position: relative;
+}

@@ -331,6 +331,67 @@
   color: #7264AA; 
 }
 
+
+/*About*/
+
+.main-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  flex-direction: row-reverse;
+  text-align: right;
+  max-width: 950px;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  margin-right: 50px;  
+}
+
+.about-wrap-title {
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.about-wrap-description {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.about-wrap-description p {
+  margin-top: 20px;
+}
+
+.about-image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/*Фиолетовая-черта*/
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 27px;
+  left: -25px;
+  width: 60px; 
+  height: 20px; 
+  background-color: #8d9ace;
+  transform: rotate(0);  
+  z-index: 10; 
+  border-radius: 5px;
+}
+
+
+
 /*Footer style*/
 
 .footer {
