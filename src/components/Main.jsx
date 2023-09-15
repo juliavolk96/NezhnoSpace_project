@@ -3,8 +3,8 @@ import MainAbout from './MainAbout.jsx';
 import MainBanner from './MainBanner.jsx';
 import MainSubscription from './MainSubscription.jsx';
 import MainTryFree from './MainTryFree.jsx';
-import MainReviews from './MainReviews.jsx';
-import MainFounder from './MainFounder.jsx';
+// import MainReviews from './MainReviews.jsx';
+// import MainFounder from './MainFounder.jsx';
 
 function Main() {
   return (
@@ -14,8 +14,8 @@ function Main() {
         <MainAbout/>
         <MainSubscription />
         <MainTryFree />
-        <MainReviews />
-        <MainFounder />
+        {/* <MainReviews /> */}
+        {/* <MainFounder /> */}
       </div>
     </div>
   );

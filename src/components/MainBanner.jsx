@@ -1,26 +1,15 @@
 import React from 'react';
+import MainGreetings from './MainGreetings.jsx';
 import MainIntro from './MainIntro.jsx';
+import './css/mainBanner.css';
 
 function MainBanner() {
   return (
-    <div className='main-banner intro-wrap'>
-      <h1 className='intro-title'>
-        <p>Здравствуй,</p>
-        <span>это Нежно Space</span>
-      </h1>
-      <p className='intro-subtitle'>
-        платформа психологической поддержки, которая объединила
-        силу искусственного интеллекта с современными методами психотерапии.
-      </p>
-      <p className='intro-subtitle'>
-        Наша цель - помочь тебе справиться с эмоциональным перееданием,
-        тревогой о весе, стрессом и негативным отношением к себе.
-      </p>
-      <p className='intro-subtitle'>
-        В этом нам поможет нейросеть, которая каждый месяц будет составлять
-        для тебя индивидуальную подборку упражнений, практик и рекомендаций
-      </p>
+    <div className='main-banner'>
       <div>
+        <MainGreetings />
+      </div>
+      <div className='main-intro-container'>
         <MainIntro />
       </div>
     </div>

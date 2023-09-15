@@ -1,10 +1,11 @@
 import React from 'react';
 import aboutImage from '../images/photo.png';
 import aboutImageMobile from '../images/photo-mobile.png';
+import './css/mainAbout.css';
 
 function MainAbout() {
   return (
-    <section className='main-about'>
+    <div className='main-about'>
       <picture className='about-image'>
         <source srcSet={aboutImage} type="image/png" />
         <img src={aboutImageMobile} alt="girl" />
@@ -19,7 +20,7 @@ function MainAbout() {
            <p>Наша платформа создана специально, чтобы быть рядом с тобой в любое время.</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
