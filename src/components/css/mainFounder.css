@@ -1,0 +1,65 @@
+.main-founder-wrap {
+  margin-bottom: 100px;
+}
+
+.main-founder-title {
+  text-align: left;
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+
+.founder-description-container {
+  max-width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.founder-description-title {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.founder-description-list {
+  list-style-type: disc;
+  padding: 0px 20px;
+  line-height: 24px;
+}
+
+.video-container {
+  margin-right: 25px;
+  /* background-size: 100% 100%;
+  width: 100%; */
+}
+
+.video {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: gray;
+  filter: blur(0);
+}
+
+.video-player[poster] {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .video-controls {
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  bottom: 0;
+  padding: 0 15px 13px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 4;
+  display: none;
+} */
