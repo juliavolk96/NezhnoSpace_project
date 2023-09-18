@@ -1,0 +1,92 @@
+.main-reviews-wrap {
+  margin-bottom: 100px;
+  max-width: 950px;
+}
+
+/* .reviews-slider {
+  margin-bottom: 20px;
+} */
+
+.reviews-title {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 37px;
+  /* margin-bottom: 20px; */
+}
+
+.reviews-slider .slick-track {
+  display: flex;
+  margin: 40px 10px 50px 10px;
+  min-height: 200px;
+}
+/* 
+.reviews-slider .slick-list {
+  margin: auto;
+} */
+
+.review-slide {
+  width: 300px !important;
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 7px rgba(141, 154, 206, 0.5);
+  word-wrap: break-word;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: auto;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+}
+
+.reviews-item hr {
+  border-radius: 5px;
+  height: 2px;
+  background: #8d9ace;
+  border: none;
+  margin-top: 0;
+}
+
+.reviews-author-age {
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: "Ubuntu Condensed";
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #111111;
+  font-weight: 400;
+}
+
+.reviews-text {
+  display: block;
+  flex: 1;
+  font-size: 13px;
+  line-height: 16px;
+  color: #111111;
+  margin: 10px 0;
+}
+
+.reviews-time {
+  position: relative;
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 20px;
+  color: #111111;
+  padding: 0 10px;
+}
+
+.reviews-slider .slick-dots {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
