@@ -5,6 +5,7 @@ import MainSubscription from './MainSubscription.jsx';
 import MainTryFree from './MainTryFree.jsx';
 import MainFounder from './MainFounder.jsx';
 import MainReviews from './MainReviews.jsx';
+import BuySubscription from './BuySubscription.jsx';
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
         <MainTryFree />
         <MainFounder />
         <MainReviews />
+        <BuySubscription />
       </div>
     </div>
   );

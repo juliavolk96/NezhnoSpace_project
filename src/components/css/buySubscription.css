@@ -1,0 +1,114 @@
+.buy-subscription-section {
+  overflow-x: hidden;
+}
+
+.buy-subscription-wrap {
+  margin-bottom: 100px;
+}
+
+.buy-subscription-wrap {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.buy-subscription-title {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Ubuntu Condensed";
+}
+
+.prices-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.buy-subscription-items {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 150px 32px 20px 32px;
+  border-radius: 25px;
+  min-width: 230px;
+  width: 300px;
+  border: 2px solid #8d9ace;
+  background-image: url(../../images/logo-vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.buy-subscription-item-wrap {
+  padding: 0 10px;
+}
+
+.buy-subscription-item-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+.buy-subscription-item-duration {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #111111;
+}
+
+.price-item {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+
+}
+
+.buy-sunscription-text {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-button {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 16px 15px;
+  background: #7264aa;
+  border: 2px solid #7264aa;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.4; /* Начальная прозрачность */
+  transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+}
+
+/* Стили для кнопки при наведении */
+.payment-button:hover {
+  opacity: 1.5; /* При наведении сделать полностью видимой */
+}
+
+.buy-subscription-section .text-color-violet {
+  color: #8075ac;
+}

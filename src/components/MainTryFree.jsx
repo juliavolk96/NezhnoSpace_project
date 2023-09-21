@@ -5,7 +5,7 @@ import './css/tryFreeSlider.css';
 function MainTryFree() {
   return (
     <section className='try-free-wrap'>
-      <h2 className='try-free-title'>Попробовать бесплатно:</h2>
+      <h2 className='try-free-title'>Попробовать бесплатно</h2>
       <div className='try-free-description'>
         <p>Уверены, что психотерапия должна быть доступна для каждого.<br />
           После регистрации в личном кабинете тебе откроется бесплатный период,
