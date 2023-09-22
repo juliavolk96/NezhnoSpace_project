@@ -79,7 +79,7 @@ a {
   cursor: pointer;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 70px;
+  margin-top: 40px;
   display: inline-block;
 }
 
@@ -89,4 +89,24 @@ a {
 
 section {
   position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .blue-button {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 13px;
+    background-color: #421DD8;
+    padding: 16px 32px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 60px;
+    display: inline-block;
+  }
+
+  
+  
 }
