@@ -7,7 +7,6 @@
 }
 
 .buy-subscription-wrap {
-  max-width: 950px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -46,6 +45,7 @@
   background-image: url(../../images/logo-vector.svg);
   background-repeat: no-repeat;
   background-position: 50% 10%;
+  background-color: white;
 }
 
 .buy-subscription-item-wrap {
@@ -100,13 +100,13 @@
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
-  opacity: 0.4; /* Начальная прозрачность */
-  transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+  opacity: 0.4; 
+  transition: opacity 0.3s ease;
 }
 
 /* Стили для кнопки при наведении */
 .payment-button:hover {
-  opacity: 1.5; /* При наведении сделать полностью видимой */
+  opacity: 1.5;
 }
 
 .buy-subscription-section .text-color-violet {

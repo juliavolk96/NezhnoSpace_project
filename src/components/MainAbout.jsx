@@ -5,22 +5,22 @@ import './css/mainAbout.css';
 
 function MainAbout() {
   return (
-    <div className='main-about'>
+    <section className='main-about'>
       <picture className='about-image'>
-        <source srcSet={aboutImage} type="image/png" />
-        <img src={aboutImageMobile} alt="girl" />
+        <source srcSet={aboutImageMobile} type="image/png" media="(max-width: 1024px)" />
+        <img src={aboutImage} alt="girl" />
       </picture>
       <div className='about-wrap'>
-        <h2 className='about-wrap-title'>Мы здесь, чтобы<br />
+        <h2 className='about-wrap-title'>Мы здесь, чтобы&shy;
         ты прошла свой путь нежно</h2>
         <div className='about-wrap-description'>
-          <p>Расстройство пищевого поведения влияет на многие аспекты жизни,<br />
+          <p className='about-wrap-description-text'>Расстройство пищевого поведения влияет на многие аспекты жизни
             и справиться с трудностями самостоятельно - не всегда получается.</p>
-           <p>Помни, поддержка - важное звено на пути к переменам.</p>
-           <p>Наша платформа создана специально, чтобы быть рядом с тобой в любое время.</p>
+           <p className='about-wrap-description-text'>Помни, поддержка - важное звено на пути к переменам.</p>
+           <p className='about-wrap-description-text'>Наша платформа создана специально, чтобы быть рядом с тобой в любое время.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

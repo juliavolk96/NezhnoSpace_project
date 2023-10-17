@@ -1,41 +1,30 @@
-/*Subscription*/
-
 .subscription-wrap {
-  width: 950px;
-  margin: 0 auto;
-  margin-top: 100px;
+  max-width: 100%;
   margin-bottom: 100px;
 }
 
 .subscription-columns {
   display: flex;
+  flex-direction: row;
 }
 
 .subscription-title {
   font-size: 32px;
   line-height: 37px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
 
 .subscription-subtitle {
-  line-height: 24px;
-  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.subscription-subtitle p {
+  margin-bottom: 10px;
 }
 
 .text-color-violet {
   color: #453878;
-}
-
-.subscription-themes {
-  line-height: 20px;
-  width: 53%; 
-  background-color: #EAE6FF;
-  border-radius: 30px;
-  padding: 50px;
-  box-sizing: border-box;
-  height: 100%;
-  margin-right: 20px;
 }
 
 .subscription-offers-title {
@@ -45,10 +34,21 @@
   margin-bottom: 15px;
 }
 
+.subscription-themes {
+  box-sizing: border-box;
+  width: 53%; 
+  background-color: #EAE6FF;
+  border-radius: 30px;
+  padding: 50px;
+  line-height: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
 .subscription-right-block {
   width: 47%;
   box-sizing: border-box;
-  height: 100%;
+  height: auto;
   text-align: justify;
 }
 
@@ -56,7 +56,7 @@
   min-height: 175px;
   background-color: #E3DBFF;
   border-radius: 30px;
-  padding: 50px 40px;
+  padding: 50px 50px;
   margin-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@
   min-height: 175px;
   background-color: #D5CAFD;
   border-radius: 30px;
-  padding: 50px 40px;
+  padding: 50px 50px;
 }
 
 .subscription-offers-subtitle-wrap {
@@ -76,6 +76,7 @@
   padding: 15px 20px;
 }
 
+
 .text-bold {
   font-weight: 700;
 }
@@ -84,12 +85,9 @@
   line-height: 22px;
 }
 
-
 /*Путь пользователя*/
-
 .subscription-user-path {
   display: flex;
-  /* align-items: center; */
   position: relative;
   justify-content: center;
   margin: 50px 0;
@@ -114,7 +112,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   margin-right: 50px;
 }
 
@@ -122,7 +119,6 @@
   width: 150px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
   margin-right: 50px;
@@ -136,6 +132,7 @@
   text-align: center;
 }
 
+/*Придаем форму круга*/
 .circle1 img,
 .circle2 img,
 .circle3 img {
@@ -153,6 +150,7 @@
   border-radius: 50%;
 }
 
+/*Добавляем - */
 .circle3::after {
   content: "";
   display: block;
@@ -188,3 +186,99 @@
   margin-left: 174px;
   transform: translate(0);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .subscription-wrap {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+
+  .subscription-title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subscription-subtitle {
+    font-size: 13px;
+  }
+
+  .subscription-user-path {
+    font-size: 13px;
+  }
+
+  .subscription-offers-title {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .subscription-themes {
+    box-sizing: border-box;
+    width: 50%; 
+    background-color: #EAE6FF;
+    border-radius: 30px;
+    padding: 50px;
+    line-height: 16px;
+    margin-right: 15px;
+    height: auto;
+  }
+
+  .subscriptions-themes-list {
+    list-style-type: disc;
+    padding: 15px 20px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+  .subscription-offers-subtitle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .subscription-right-block {
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+    text-align: left;
+  }
+
+  .subscription-columns {
+    margin-bottom: 100px;
+  }
+  
+}
+
+/* .subscription-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subscription-themes {
+    box-sizing: border-box;
+    width: 65%; 
+    background-color: #EAE6FF;
+    border-radius: 30px;
+    padding: 50px;
+    line-height: 20px;
+    margin-right: 0px;
+    height: auto;
+  }
+  
+  .subscription-right-block {
+    margin-top: 20px;
+    width: 65%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border-radius: 30px;
+  } */

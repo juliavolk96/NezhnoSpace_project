@@ -5,14 +5,14 @@ import './css/mainBanner.css';
 
 function MainBanner() {
   return (
-    <div className='main-banner'>
-      <div>
+    <section className='main-banner'>
+      <div className='main-greetings-container'>
         <MainGreetings />
       </div>
       <div className='main-intro-container'>
         <MainIntro />
       </div>
-    </div>
+    </section>
   );
 }
 

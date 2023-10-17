@@ -6,6 +6,7 @@ import MainTryFree from './MainTryFree.jsx';
 import MainFounder from './MainFounder.jsx';
 import MainReviews from './MainReviews.jsx';
 import BuySubscription from './BuySubscription.jsx';
+import './css/main.css';
 
 function Main() {
   return (

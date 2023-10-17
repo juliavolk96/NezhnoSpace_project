@@ -44,7 +44,7 @@
 .arrow-left::before,
 .arrow-right,
 .arrow-right {
-  top: 35%;
+  top: 40%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -53,5 +53,13 @@
   .arrow-right,
   .arrow-right {
     top: 40%;
+  }
+
+  .arrow-left {
+    left: -45px;
+  }
+
+  .arrow-right {
+    right: -45px;
   }
 }
